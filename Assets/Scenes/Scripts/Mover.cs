@@ -16,7 +16,6 @@ public class Mover : MonoBehaviour
     {
        dTime=Time.deltaTime;
        playerYPosition=GameObject.Find("Player Roomba").transform.position.y;
-       UselessFunction();
    }
 
     // Update is called once per frame
@@ -37,12 +36,5 @@ public class Mover : MonoBehaviour
        
         transform.Translate (xValue, yValue - (isOnGround? 0 : 1) * gravity, zValue); 
         
-    }
-
-    void UselessFunction()
-    {
-        Debug.Log("Why am I doing this? me not learning anything be like");
-        Debug.Log("Anyway Eruri canon");
-        Debug.Log("Fanfiction time babyyyyy");
     }
 }
